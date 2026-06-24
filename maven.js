@@ -1,7 +1,7 @@
 const { Telegraf, Markup } = require('telegraf');
 const cron = require('node-cron');
 
-const TOKEN = '8541387675:AAFLi-NcX0XQ9h4AVZ_amjU11oJADkFRLqA';
+const TOKEN = process.env.BOT_TOKEN;
 const bot = new Telegraf(TOKEN);
 
 const backlog = [
